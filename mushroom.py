@@ -66,7 +66,7 @@ elif image_source == "Take a Picture":
 
 # Process the image and predict
 if image is not None:
-    st.image(image, caption="📸 Uploaded Mushroom Image", use_column_width=True)
+    st.image(image, caption="📸 Uploaded Mushroom Image", use_container_width=True)
 
     # Prediction Button
     if st.button("🔍 Predict Freshness Score"):
