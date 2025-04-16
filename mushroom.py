@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Load the trained model
-model = tf.keras.models.load_model("mushroom_regression_model_8379.keras")
+model = tf.keras.models.load_model("mushroom_regression_model_9186.keras",compile=False)
 
 # Define function to preprocess image
 def preprocess_image(image):
@@ -66,7 +66,7 @@ elif image_source == "Take a Picture":
 
 # Process the image and predict
 if image is not None:
-    st.image(image, caption="📸 Uploaded Mushroom Image", use_column_width=True)
+    st.image(image, caption="📸 Uploaded Mushroom Image", use_container_width=True)
 
     # Prediction Button
     if st.button("🔍 Predict Freshness Score"):
