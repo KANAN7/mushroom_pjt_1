@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Load the trained model
-model = tf.keras.models.load_model("mushroom_regression_model_8379.keras")
+model = tf.keras.models.load_model("mushroom_regression_model_9186.keras",compile=False)
 
 # Define function to preprocess image
 def preprocess_image(image):
